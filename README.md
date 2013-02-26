@@ -1,0 +1,4 @@
+.config
+=======
+
+App configurations
