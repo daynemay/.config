@@ -1,4 +1,4 @@
-:color desert
+:colors desert
 
 :set expandtab
 :set shiftwidth=4
