@@ -28,3 +28,6 @@ ln -s ~/projects/config/vim/.vimrc ~/.vimrc
 ln -s ~/projects/config/zsh/.zshrc ~/.zshrc
 
 # TODO: DroidSansMono font
+
+# Install Apache
+sudo apt-get install apache2
