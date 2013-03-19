@@ -25,6 +25,6 @@ mv .config config
 
 # Link ~/.vimrc and ~/.zshrc to the version controlled ones
 ln -s ~/projects/config/vim/.vimrc ~/.vimrc
-ln -s ~/projects/config/zsh/.vimrc ~/.zshrc
+ln -s ~/projects/config/zsh/.zshrc ~/.zshrc
 
 # TODO: DroidSansMono font
