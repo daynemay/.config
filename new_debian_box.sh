@@ -3,6 +3,9 @@ sudo apt-get install git
 sudo apt-get install vim
 sudo apt-get install zsh
 
+# Default zsh
+chsh -s zsh
+
 # Install Desert colour scheme for Vim
 # Referenced in .vimrc, below
 cd ~
