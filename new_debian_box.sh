@@ -24,3 +24,4 @@ mv .config config
 ln -s ~/projects/config/vim/.vimrc ~/.vimrc
 ln -s ~/projects/config/zsh/.vimrc ~/.zshrc
 
+# TODO: DroidSansMono font
