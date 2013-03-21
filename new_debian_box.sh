@@ -1,3 +1,7 @@
+# TODO: Ensure that apt-get exists - i.e. we're on a Debian or
+# or Ubuntu box - before we try to use it.
+# TODO: Bail with appropriate message if not the case.
+
 # Install git, vim, zsh
 sudo apt-get install git
 sudo apt-get install vim
@@ -5,6 +9,8 @@ sudo apt-get install zsh
 
 # Default zsh
 chsh -s `which zsh`
+
+# TODO: Check for existence of directories before creating them
 
 # Install Desert colour scheme for Vim
 # Referenced in .vimrc, below
