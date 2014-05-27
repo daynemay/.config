@@ -38,6 +38,10 @@ unsetopt list_beep
 PROMPT="%{$fg[green]%}%n@%m%#%{$reset_color%} "
 RPROMPT="%{$fg_bold[blue]%}%~%{$reset_color%}"
 
+# XTerm title
+# precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+precmd () {print -Pn "\e]0;%m\a"}
+
 # Aliases
 alias pacman='sudo pacman'
 alias ls='ls --color=auto'
