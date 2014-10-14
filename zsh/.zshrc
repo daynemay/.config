@@ -34,6 +34,9 @@ unsetopt beep
 unsetopt hist_beep
 unsetopt list_beep
 
+# Don't freak out on no match of wildcards - e.g. find . -name *whatever*
+unsetopt nomatch
+
 # Terminal Prompt
 PROMPT="%{$fg[green]%}%n@%m%#%{$reset_color%} "
 RPROMPT="%{$fg_bold[blue]%}%~%{$reset_color%}"
@@ -44,7 +47,7 @@ precmd () {print -Pn "\e]0;%m\a"}
 
 # Aliases
 alias pacman='sudo pacman'
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias df='df -h -x none'
 if [ -f /usr/bin/htop ]; then
     alias top='htop'
@@ -74,7 +77,7 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-eval "$(dircolors -b)"
+# eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
