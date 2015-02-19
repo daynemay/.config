@@ -48,7 +48,7 @@ precmd () {print -Pn "\e]0;%m\a"}
 # Aliases
 alias pacman='sudo pacman'
 # alias ls='ls --color=auto'
-alias df='df -h -x none'
+# alias df='df -h -x none'
 if [ -f /usr/bin/htop ]; then
     alias top='htop'
 fi
